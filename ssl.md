@@ -5,7 +5,7 @@
 인증서 만료일 확인
 
 ````bash
-openssl x509 -enddate -noout -in {{경로}.crt}
+openssl x509 -enddate -noout -in {경로}.crt
 ````
 
 ## 참조
