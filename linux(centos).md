@@ -1,6 +1,15 @@
-## Linux
+## Linux (Cent OS)
 
-## 유용한 명령어
+### CentOS Release Version
+* `/etc/centos-release` 파일 
+
+````bash
+cat /etc/centos-release
+
+CentOS Linux release 8.2.2004 (Core)
+````
+
+### UID, GID
 * gid(group id) : 5001, uid(user id) : 5001 번의 *bash 권한을 소유한* test 그룹 및 유저 생성후 `/home/testtest`를 생성된 유저의 홈디렉토리로 사용한다.
 ````
 groupadd -g 5001 test && useradd -u 5001 -g 5001 -d /home/testtest -m test
