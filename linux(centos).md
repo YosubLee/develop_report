@@ -1,9 +1,9 @@
 # 목차
 * [Directory Structure](#DirectoryStructure)
 * [File](#File)
+* [UID, GID](#UID,GID)
 
-
-### Directory Structure
+## Directory Structure
 * `/` (Root) : 최상위 디렉토리
 * `/bin` : 시스템에서 사용되는 기본 명령어 (cp, mv ..)
 * `/sbin` : 시스템 관리자가 사용하는 명령어 (reboot, shutdown)
@@ -13,8 +13,8 @@
     * 물리적으로 디스크에 저장하지 않음 (메모리에 저장)
 * `/home` : 일반 사용자들이 사용하는 디렉토리
 
-#### File
-##### `/etc` 하위 디렉토리
+## File
+### `/etc` 하위 디렉토리
 * `/etc/centos-release` 
 ````bash
 cat /etc/centos-release
@@ -23,7 +23,7 @@ cat /etc/centos-release
 CentOS Linux release 8.2.2004 (Core)
 ````
 
-##### `/proc` 하위 디렉토리 
+### `/proc` 하위 디렉토리 
 * `/proc/cpuinfo` 
 ````bash
 cat /proc/cpuinfo
@@ -87,7 +87,7 @@ power management:
 * processor : Cpu Core (CPU 전체 Core 갯수 명령어 : `grep -c processor /proc/cpuinfo`)
 * physical id : 물리적인 CPU ID (processor가 달라도 physical id가 동일하다면 물리적으로 같은 CPU의 다른 코어)
 
-### UID, GID
+## UID, GID
 * gid(group id) : 5001, uid(user id) : 5001 번의 *bash 권한을 소유한* test 그룹 및 유저 생성후 `/home/testtest`를 생성된 유저의 홈디렉토리로 사용한다.
 ````
 groupadd -g 5001 test && useradd -u 5001 -g 5001 -d /home/testtest -m test
