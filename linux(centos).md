@@ -14,8 +14,8 @@
 * `/home` : 일반 사용자들이 사용하는 디렉토리
 
 #### File
-* `/etc` 하위 디렉토리
-    * `/etc/centos-release` 
+##### `/etc` 하위 디렉토리
+* `/etc/centos-release` 
 ````bash
 cat /etc/centos-release
 #######################
@@ -23,8 +23,8 @@ cat /etc/centos-release
 CentOS Linux release 8.2.2004 (Core)
 ````
 
-* `/proc` 하위 디렉토리 
-    * `/proc/cpuinfo` 
+##### `/proc` 하위 디렉토리 
+* `/proc/cpuinfo` 
 ````bash
 cat /proc/cpuinfo
 #######################
@@ -84,8 +84,8 @@ address sizes   : 39 bits physical, 48 bits virtual
 power management:
 
 ````
-    * processor : Cpu Core (CPU 전체 Core 갯수 명령어 : `grep -c processor /proc/cpuinfo`)
-    * physical id : 물리적인 CPU ID (processor가 달라도 physical id가 동일하다면 물리적으로 같은 CPU의 다른 코어)
+* processor : Cpu Core (CPU 전체 Core 갯수 명령어 : `grep -c processor /proc/cpuinfo`)
+* physical id : 물리적인 CPU ID (processor가 달라도 physical id가 동일하다면 물리적으로 같은 CPU의 다른 코어)
 
 ### UID, GID
 * gid(group id) : 5001, uid(user id) : 5001 번의 *bash 권한을 소유한* test 그룹 및 유저 생성후 `/home/testtest`를 생성된 유저의 홈디렉토리로 사용한다.
