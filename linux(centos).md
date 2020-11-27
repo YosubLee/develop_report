@@ -1,6 +1,8 @@
 # 목차
 * [Directory Structure](#Directory-Structure)
 * [File](#File)
+    * [`/etc` 하위 디렉토리](#etc-하위-디렉토리)
+    * [`/proc` 하위 디렉토리](#proc-하위-디렉토리)
 * [UID, GID](#UID-GID)
 
 ## Directory Structure
