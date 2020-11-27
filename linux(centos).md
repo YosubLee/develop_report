@@ -1,7 +1,7 @@
 # 목차
-* [Directory Structure](#DirectoryStructure)
+* [Directory Structure](#Directory-Structure)
 * [File](#File)
-* [UID, GID](#UID,GID)
+* [UID, GID](#UID,-GID)
 
 ## Directory Structure
 * `/` (Root) : 최상위 디렉토리
