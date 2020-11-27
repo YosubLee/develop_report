@@ -1,7 +1,7 @@
-## Linux (Cent OS)
+# 목차
+* [Directory Structure](#DirectoryStructure)
+* [File](#File)
 
-### CentOS Release Version
-* `/etc/centos-release` 파일 
 
 ### Directory Structure
 * `/` (Root) : 최상위 디렉토리
