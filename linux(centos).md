@@ -86,8 +86,21 @@ address sizes   : 39 bits physical, 48 bits virtual
 power management:
 
 ````
-* processor : Cpu Core (CPU 전체 Core 갯수 명령어 : `grep -c processor /proc/cpuinfo`)
-* physical id : 물리적인 CPU ID (processor가 달라도 physical id가 동일하다면 물리적으로 같은 CPU의 다른 코어)
+    * processor : Cpu Core (CPU 전체 Core 갯수 명령어 : `grep -c processor /proc/cpuinfo`)
+    * physical id : 물리적인 CPU ID (processor가 달라도 physical id가 동일하다면 물리적으로 같은 CPU의 다른 코어)
+* `/proc/숫자(디렉토리)` 
+    * ps -ef 명령어에서 나온 프로세스 번호 (`proc/{프로세스번호}`) 디렉토리 접근시 프로세스에 대한 정보확인 가능
+	````
+    [root@localhost ~]# ps -ef | more
+	UID          PID    PPID  C STIME TTY          TIME CMD
+	root           1       0  0  8월14 ?      00:04:32 /usr/lib/systemd/systemd --system --deserialize 21
+	root           2       0  0  8월14 ?      00:00:00 [kthreadd]
+	root           3       2  0  8월14 ?      00:00:00 [rcu_gp]
+	root           4       2  0  8월14 ?      00:00:00 [rcu_par_gp]
+	root           6       2  0  8월14 ?      00:00:00 [kworker/0:0H]	
+	````
+
+	
 
 # UID, GID
 * gid(group id) : 5001, uid(user id) : 5001 번의 *bash 권한을 소유한* test 그룹 및 유저 생성후 `/home/testtest`를 생성된 유저의 홈디렉토리로 사용한다.
