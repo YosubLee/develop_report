@@ -13,4 +13,4 @@
 * 개발 관련 x. 실행 관련 o
 
 ## JDK (Java Development Kit)
-* JRE + 개발 툴(java c)
+* JRE + 개발 툴(javac)
